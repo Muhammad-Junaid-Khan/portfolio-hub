@@ -1,0 +1,49 @@
+body {
+    scroll-behavior: smooth;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.navbar {
+    background: rgba(0,0,0,0.8);
+}
+
+.hero {
+    height: 100vh;
+    background: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085') no-repeat center center/cover;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.6);
+}
+
+.hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+#contact {
+    padding-top: 80px;
+}
+
+#contact a {
+    text-decoration: underline;
+    color: #0d6efd;
+}
+
+#contact input,
+#contact textarea {
+    border-radius: 5px;
+}
+
+#contact button {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#contact button:hover {
+    transform: scale(1.05);
+}
