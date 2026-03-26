@@ -19,10 +19,10 @@ function addWebsite(name, description, link) {
 }
 
 // Example websites (Delete these and add yours)
-addWebsite("OfficialLinkPK", "Government Info Portal is a responsive web application designed to deliver government-related information efficiently, offering users quick access to services, updates, and official resources.", "https://muhammad-junaid-khan.github.io/officiallinkpk/index.html");
-addWebsite("Blog Website", "Modern Blog Platform", "#");
+addWebsite("OfficialLinkPK", "Government Info Portal is a responsive web application designed to deliver government-related information efficiently, offering users quick access to services, updates, and official resources.", "https://muhammad-junaid-khan.github.io/officiallinkpk/");
+addWebsite("Mera College Website", "A professional website for Mera College, showcasing courses, events, and campus life with a modern and user-friendly design", "https://muhammad-junaid-khan.github.io/Mera-College/");
 
-document.getElementById("contactForm").addEventListener("submit", function(e) {
+document.getElementById("contactForm").addEventListener("submit", function (e) {
     e.preventDefault();
 
     const name = document.getElementById("name").value.trim();
@@ -36,8 +36,8 @@ document.getElementById("contactForm").addEventListener("submit", function(e) {
 
     const subject = "New Contact Message from " + name;
     const body = "Name: " + name + "%0D%0A" +
-                 "Email: " + email + "%0D%0A%0D%0A" +
-                 "Message:%0D%0A" + message;
+        "Email: " + email + "%0D%0A%0D%0A" +
+        "Message:%0D%0A" + message;
 
     window.location.href = "mailto:junaidkhanldk@gmail.com?subject=" + subject + "&body=" + body;
 
